@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VDD — Viral Dudak Dövmeleri</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; }
+
+    nav {
+      background: #fff0f4;
+      border-bottom: 1px solid #f4b8cb;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 32px;
+    }
+    nav .logo img { height: 50px; }
+    nav ul { list-style: none; display: flex; gap: 24px; }
+    nav ul li a { text-decoration: none; color: #9b2044; font-size: 0.9rem; }
+
+    .hero {
+      background: #f9b4c8;
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+    .hero h1 { font-size: 2.2rem; color: #7a1535; }
+    .hero p { color: #9b2044; margin-top: 10px; }
+    .hero button {
+      margin-top: 24px;
+      background: #c0203f;
+      color: #fff;
+      border: none;
+      padding: 12px 32px;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .video-section {
+      background: #fff6f8;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .video-section h2 { font-size: 1.4rem; color: #7a1535; margin-bottom: 20px; }
+    .video-section video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 16px;
+      border: 2px solid #f4b8cb;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #7a1535;
+      margin: 40px 0 20px;
+    }
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 0 20px 40px;
+      background: #fff6f8;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #f4b8cb;
+      border-radius: 16px;
+      width: 200px;
+      padding: 20px;
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .card h3 { font-size: 0.95rem; color: #7a1535; }
+    .card p { font-size: 0.8rem; color: #b06080; margin-top: 6px; }
+    .card .price { font-size: 1rem; font-weight: bold; color: #c0203f; margin-top: 10px; }
+
+    .about {
+      background: #f9b4c8;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .about h2 { font-size: 1.3rem; color: #7a1535; margin-bottom: 10px; }
+    .about p { font-size: 0.9rem; color: #9b2044; max-width: 500px; margin: 0 auto; line-height: 1.7; }
+
+    footer {
+      background: #c0203f;
+      color: #fff;
+      text-align: center;
+      padding: 16px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <span class="logo"><img src="images/logo.png" alt="VDD Logo" /></span>
+    <ul>
+      <li><a href="#">Ana Sayfa</a></li>
+      <li><a href="#">Ürünler</a></li>
+      <li><a href="#">Hakkımızda</a></li>
+      <li><a href="#">İletişim</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>Viral Dudak Dövmeleri</h1>
+    <p>Kalıcı güzellik, özgün dokunuş. Dudaklarını yeniden keşfet.</p>
+    <button>Ürünleri Keşfet</button>
+  </div>
+
+  <div class="video-section">
+    <h2>Tanıtım Videosu</h2>
+    <video controls>
+      <source src="images/tanıtım.mp4" type="video/mp4" />
+    </video>
+  </div>
+
+  <div style="background:#fff6f8;">
+    <div class="section-title">Ürünlerimiz</div>
+    <div class="products">
+      <div class="card">
+        <img src="images/urun1.jpg" alt="Ürün 1" />
+        <h3>Dudak Dövmesi 1</h3>
+        <p>Doğal ve kalıcı renk</p>
+        <div class="price">₺125</div>
+      </div>
+      <div class="card">
+        <img src="images/urun2.jpg" alt="Ürün 2" />
+        <h3>Dudak Dövmesi 2</h3>
+        <p>Leopar desen, özgün stil</p>
+        <div class="price">₺125</div>
+      </div>
+      <div class="card">
+        <img src="images/urun3.jpg" alt="Ürün 3" />
+        <h3>Dudak Dövmesi 3</h3>
+        <p>Kırmızı, tutkulu görünüm</p>
+        <div class="price">₺125</div>
+      </div>
+      <div class="card">
+        <img src="images/urun4.jpg" alt="Ürün 4" />
+        <h3>Dudak Dövmesi 4</h3>
+        <p>Narin ve şık tasarım</p>
+        <div class="price">₺125</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about">
+    <h2>Neden VDD?</h2>
+    <p>Dudak dövmesi alanında trend belirleyen markamız, her kadının özgün güzelliğini ön plana çıkarmak için premium ürünler sunar. Güvenli, kalıcı ve estetik.</p>
+  </div>
+
+  <footer>© 2024 VDD — Viral Dudak Dövmeleri. Tüm hakları saklıdır.</footer>
+
+</body>
+</html>
